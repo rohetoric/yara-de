@@ -11,7 +11,7 @@ For the SQL questions, I have included the query from creation of table to inser
 
 The `Python` version used by me for Python questions is `3.10`.
 
-The SQL engine used by me for SQL questions is `MySQL`.
+The `SQL` engine used by me for SQL questions is `MySQL`.
 
 #### Test Cases - 
 
