@@ -57,16 +57,6 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"There is an exception raised due to {e}. Terminating the code!")
             sys.exit(1)
-
-
-
-    # # number of elements as input
-    # n = int(input("Enter number of list elements : ")) # Example - 6
-
-    # print("Enter elements into the list. Press Enter before entering the elements after the first element!")
-    # for i in range(0, n):
-    #     ele = int(input())
-    #     nums.append(ele) 
     
     print(f"Entered list is :: {nums}")
 
