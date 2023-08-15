@@ -1,3 +1,10 @@
+'''
+Time Complexity - O(logn)
+Space Complexity - O(1)
+'''
+import sys
+
+
 def find_target_in_nums(nums:list,target:int) -> list[int,int]:
     first_position,last_position=-1,-1
 
@@ -41,13 +48,25 @@ if __name__ == "__main__":
     # creating an empty list
     nums = []
     
-    # number of elements as input
-    n = int(input("Enter number of list elements : ")) # Example - 6
+    while 1:
+        try:
+            n = input("Enter number inside the list. [Press * to stop entering any more elements] -> ")
+            if n == '*':
+                break
+            nums.append(int(n))
+        except Exception as e:
+            print(f"There is an exception raised due to {e}. Terminating the code!")
+            sys.exit(1)
 
-    print("Enter elements into the list. Press Enter before entering the elements after the first element!")
-    for i in range(0, n):
-        ele = int(input())
-        nums.append(ele) 
+
+
+    # # number of elements as input
+    # n = int(input("Enter number of list elements : ")) # Example - 6
+
+    # print("Enter elements into the list. Press Enter before entering the elements after the first element!")
+    # for i in range(0, n):
+    #     ele = int(input())
+    #     nums.append(ele) 
     
     print(f"Entered list is :: {nums}")
 
@@ -55,7 +74,4 @@ if __name__ == "__main__":
 
     position = find_target_in_nums(nums=nums,target=target)
 
-    print(position)
-
-
-
+    print(f"Position inside the list -> {position}")
